@@ -73,7 +73,7 @@ const App = () => {
 
   const deletefn = async (id) => {
     try {
-      await axios.delete(`https://crud-backend-bvp5.onrender.com/crud${id}`);
+      await axios.delete(`https://crud-backend-bvp5.onrender.com/crud/${id}`);
       fetchdata();
       //  alert('deleted successfully');
     } catch (error) {
@@ -86,6 +86,7 @@ const App = () => {
     <>
 
       <h2 className='text-center text-white bg-primary p-3'>Crud Page</h2>
+      
       {/* input field */}
       
       <div className="row">
